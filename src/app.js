@@ -95,11 +95,11 @@ app.get("*", (req, res) => {
     name: "othman",
   });
 });
-app.listen(process.env.PORT || 5000);
 
-// app.listen(port, () => {
-//   console.log("server is up on port " + port);
-// });
+app.listen(port, () => {
+  console.log("server is up on port " + port);
+});
+
 // app.com
 // app.com/help
 // app.com/about
