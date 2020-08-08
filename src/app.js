@@ -96,13 +96,10 @@ app.get("*", (req, res) => {
   });
 });
 
-// app.listen(port, () => {
-//   console.log("server is up on port" + port);
-// });
-
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.listen(port, () => {
+  console.log("server is up on port " + port);
 });
+
 // app.com
 // app.com/help
 // app.com/about
