@@ -100,6 +100,10 @@ app.listen(port, () => {
   console.log("server is up on port " + port);
 });
 
+app.listen(port, () => {
+  console.log("server is up on port " + port);
+});
+
 // app.com
 // app.com/help
 // app.com/about
