@@ -10,7 +10,7 @@ const geographic = ({ latitude, longitude }, callback) => {
   request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback("unable to connect", undefined);
-    } else if (body.coord.lon === undefined) {
+    } else if (body.message) {
       callback("unable to find location", undefined);
     } else {
       callback(undefined, body.weather[0].description);
